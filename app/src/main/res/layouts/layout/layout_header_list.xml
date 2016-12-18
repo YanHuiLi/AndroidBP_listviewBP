@@ -19,11 +19,13 @@
             android:layout_height="wrap_content"
             android:src="@drawable/common_listview_headview_red_arrow"/>
 
+        <!--pb默认是占地方的，gone为不占地方-->
         <ProgressBar
             android:id="@+id/pb_progress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:indeterminateDrawable="@drawable/shape_progress"
+            android:visibility="invisible"
             />
 
 
