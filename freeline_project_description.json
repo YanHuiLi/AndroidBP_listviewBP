@@ -1,0 +1,121 @@
+{
+    "android_gradle_plugin_version": "2.2.3",
+    "apk_path": "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\build\\outputs\\apk\\app-debug.apk",
+    "apt": {
+        
+    },
+    "apt_libraries": {
+        "dagger": false,
+        "butterknife": false
+    },
+    "auto_dependency": true,
+    "build_cache_dir": "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\build\\freeline",
+    "build_directory": "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\build",
+    "build_script": "gradlew.bat :app:assembleDebug",
+    "build_script_work_directory": "",
+    "build_tools_directory": "E:\\adt-bundle-windows-x86_64-20140702\\sdk\\build-tools\\25.0.0",
+    "build_tools_version": "25.0.0",
+    "compile_sdk_directory": "E:\\adt-bundle-windows-x86_64-20140702\\sdk\\platforms\\android-25",
+    "compile_sdk_version": "android-25",
+    "databinding": [
+        
+    ],
+    "databinding_compiler_jar": "",
+    "databinding_modules": [
+        
+    ],
+    "debug_package": "com.example.archer.listviewbp",
+    "exclude_dep_res_paths": [
+        
+    ],
+    "extra_dep_res_paths": [
+        
+    ],
+    "freeline_cache_dir": "E:\\Workplace\\AndroidBestPractice\\ListViewBP",
+    "freeline_gradle_plugin_version": "0.8.4",
+    "java_home": "C:\\Program Files\\Java\\jdk1.8.0_73",
+    "launcher": "com.example.archer.listviewbp.activity.MainActivity",
+    "main_assets_directory": [
+        "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\debug\\assets",
+        "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\assets"
+    ],
+    "main_jniLibs_directory": [
+        "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\debug\\jniLibs",
+        "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\jniLibs"
+    ],
+    "main_jni_directory": [
+        "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\debug\\jni",
+        "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\jni"
+    ],
+    "main_manifest_path": "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\AndroidManifest.xml",
+    "main_project_dir": "app",
+    "main_project_name": "app",
+    "main_r_path": "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\build\\generated\\source\\r\\debug\\R.java",
+    "main_res_directory": [
+        "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\debug\\res",
+        "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\res\\layouts",
+        "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\res",
+        "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\res\\layouts\\home",
+        "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\res\\layouts\\hot_sale",
+        "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\res\\layouts\\amuse",
+        "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\res\\layouts\\delicacy",
+        "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\res\\layouts\\food_management",
+        "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\res\\layouts\\settings"
+    ],
+    "main_src_directory": [
+        "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\debug\\java",
+        "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\java"
+    ],
+    "module_dependencies": {
+        "app": [
+            
+        ]
+    },
+    "modules": [
+        {
+            "name": "app",
+            "path": "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app"
+        }
+    ],
+    "package": "com.example.archer.listviewbp",
+    "product_flavor": "",
+    "project_source_sets": {
+        "app": {
+            "main_assets_directory": [
+                "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\debug\\assets",
+                "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\assets"
+            ],
+            "main_jniLibs_directory": [
+                "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\debug\\jniLibs",
+                "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\jniLibs"
+            ],
+            "main_jni_directory": [
+                "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\debug\\jni",
+                "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\jni"
+            ],
+            "main_manifest_path": "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\AndroidManifest.xml",
+            "main_res_directory": [
+                "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\debug\\res",
+                "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\res\\layouts",
+                "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\res",
+                "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\res\\layouts\\home",
+                "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\res\\layouts\\hot_sale",
+                "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\res\\layouts\\amuse",
+                "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\res\\layouts\\delicacy",
+                "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\res\\layouts\\food_management",
+                "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\res\\layouts\\settings"
+            ],
+            "main_src_directory": [
+                "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\debug\\java",
+                "E:\\Workplace\\AndroidBestPractice\\ListViewBP\\app\\src\\main\\java"
+            ]
+        }
+    },
+    "project_type": "gradle",
+    "retrolambda": {
+        
+    },
+    "root_dir": "E:\\Workplace\\AndroidBestPractice\\ListViewBP",
+    "sdk_directory": "E:\\adt-bundle-windows-x86_64-20140702\\sdk",
+    "use_jdk8": true
+}
