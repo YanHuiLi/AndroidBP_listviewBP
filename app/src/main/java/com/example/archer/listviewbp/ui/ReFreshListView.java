@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.example.archer.listviewbp.R;
 
+import java.text.SimpleDateFormat;
 import java.util.TimerTask;
 
 /**
@@ -40,6 +41,7 @@ public class ReFreshListView extends ListView {
     private RotateAnimation rotateUpAnimation;
     private RotateAnimation rotateDownAnimation;
     private int paddingTop;
+    private OnRefreshListener mListener;
 
 
     public ReFreshListView(Context context) {
@@ -225,10 +227,54 @@ public class ReFreshListView extends ListView {
                 pb.setVisibility(View.VISIBLE);
                 title.setText("正在刷新中");
 
+                if (mListener!=null){
+                    mListener.onRefresh();
+                }
+
 
                 break;
 
         }
+
+    }
+
+    public void onRefreshComplete() {
+
+        currentState=PULL_TO_REFRESH;
+        title.setText("下拉刷新..");//切换文本
+        mHeadView.setPadding(0,-mHeadViewHeight,0,0);
+        pb.setVisibility(View.INVISIBLE);
+        arrow.setVisibility(View.VISIBLE);
+
+
+        String time = getTime();
+        this.time.setText("最后刷新时间"+time);
+
+    }
+
+    /**
+     * 得到当前的时间
+     */
+    private  String getTime() {
+
+        long currentTimeMillis = System.currentTimeMillis();
+
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+
+   return simpleDateFormat.format(currentTimeMillis);
+
+    }
+
+
+    public  interface  OnRefreshListener{
+        void onRefresh();
+    }
+
+    public void setRefreshListener(OnRefreshListener mListener) {
+
+
+         this.mListener=mListener;
 
     }
 }

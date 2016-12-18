@@ -13,10 +13,13 @@ import com.example.archer.listviewbp.ui.ReFreshListView;
 
 import java.util.ArrayList;
 
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
+
 public class MainActivity extends AppCompatActivity {
 
     private ReFreshListView listview;
     private ArrayList<String> strings;
+    private MyAdapter myAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +35,41 @@ public class MainActivity extends AppCompatActivity {
 
     private void initAdapter() {
 
+        myAdapter = new MyAdapter();
 
-       listview.setAdapter(new MyAdapter());
+        listview.setAdapter(myAdapter);
+        listview.setRefreshListener(new ReFreshListView.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+
+                new Thread(){
+
+                    @Override
+                    public void run() {
+                        try {
+                            Thread.sleep(2000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        strings.add(0,"我是下拉刷新出来的数据1");
+                        strings.add(0,"我是下拉刷新出来的数据2");
+                        strings.add(0,"我是下拉刷新出来的数据3");
+
+                        //数据变了，需要通知主线程更新UI
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                myAdapter.notifyDataSetChanged();
+                           listview.onRefreshComplete();
+
+                            }
+                        });
+                    }
+                }.start();
+
+
+            }
+        });
 
     }
 
@@ -107,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
         public View getView(int position, View convertView, ViewGroup parent) {
 
             TextView textView=new TextView(MainActivity.this);
-            textView.setText("这是一条数据Freeline"+ strings.get(position));
+            textView.setText(strings.get(position));
 
             textView.setTextSize(18);
             return textView;
