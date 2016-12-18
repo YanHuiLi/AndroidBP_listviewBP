@@ -18,16 +18,18 @@ public class ReFreshListView extends ListView {
 
     public ReFreshListView(Context context) {
         super(context);
-        init();
+        init();//一定要记得初始化
     }
 
 
     public ReFreshListView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        init();
     }
 
     public ReFreshListView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        init();
     }
     private void init() {
 

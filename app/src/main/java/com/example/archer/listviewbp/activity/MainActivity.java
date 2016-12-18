@@ -1,13 +1,11 @@
 package com.example.archer.listviewbp.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Button;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.archer.listviewbp.R;
@@ -27,8 +25,6 @@ public class MainActivity extends AppCompatActivity {
 
         initUI();
         initData();
-
-
         initAdapter();
 
 
